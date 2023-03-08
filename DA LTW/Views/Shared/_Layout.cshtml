@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DA_LTW</title>
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+    @*<link rel="stylesheet" href="~/DA_LTW.styles.css" asp-append-version="true" />*@
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+          rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">About Natours</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Your benfits</a>
+                </li>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Popular tours</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Stories</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Book now</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+        @RenderBody()
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo" />
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Company</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Contact us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Carrers</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Privacy policy</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Terms</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Built my <a href="#" class="footer__link">Nguyen Ha Anh</a> for hist
+                    online course
+                    <a href="#" class="footer__link">Advanced CSS and Sass</a>. Copy
+                    right &copy; by Nguyen Ha Anh
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
