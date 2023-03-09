@@ -3,19 +3,19 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DA_LTW.Models
 {
-    public class History
+    public class Order
     {
         [Key]
         public int Id { get; set; }
 
         public DateTime CreateDateTime { get; set; } = DateTime.Now;
 
-        // Foreign key CUSTOMER to history
+        // khoa ngoai 
         [ForeignKey("Customer")]
         public int? sdt { get; set; }
         public virtual Customer Customer { get; set; }
 
-        // Foreign key TOUR to history
+        // khoa ngoai tour
         [ForeignKey("Tour")]
         public int? IdTour { get; set; }
 

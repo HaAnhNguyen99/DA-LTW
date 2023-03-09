@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DA_LTW.Migrations
 {
     [DbContext(typeof(TourDbContext))]
-    [Migration("20230306150056_initial")]
+    [Migration("20230309142728_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -27,14 +27,22 @@ namespace DA_LTW.Migrations
 
             modelBuilder.Entity("DA_LTW.Models.Account", b =>
                 {
-                    b.Property<int>("sdt")
+                    b.Property<int>("IdAccount")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("password")
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdAccount"));
+
+                    b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("sdt");
+                    b.Property<int>("sdt")
+                        .HasColumnType("int");
+
+                    b.HasKey("IdAccount");
+
+                    b.HasIndex("sdt");
 
                     b.ToTable("Accounts");
                 });
@@ -60,7 +68,7 @@ namespace DA_LTW.Migrations
                     b.ToTable("Customers");
                 });
 
-            modelBuilder.Entity("DA_LTW.Models.History", b =>
+            modelBuilder.Entity("DA_LTW.Models.Order", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -85,6 +93,23 @@ namespace DA_LTW.Migrations
                     b.HasIndex("sdt");
 
                     b.ToTable("Histories");
+                });
+
+            modelBuilder.Entity("DA_LTW.Models.Roles", b =>
+                {
+                    b.Property<int>("IdRoles")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdRoles"));
+
+                    b.Property<string>("NameRole")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IdRoles");
+
+                    b.ToTable("Roles");
                 });
 
             modelBuilder.Entity("DA_LTW.Models.Tour", b =>
@@ -125,6 +150,16 @@ namespace DA_LTW.Migrations
                     b.ToTable("Tours");
                 });
 
+            modelBuilder.Entity("DA_LTW.Models.UserRole", b =>
+                {
+                    b.Property<int>("IdAccount")
+                        .HasColumnType("int");
+
+                    b.HasIndex("IdAccount");
+
+                    b.ToTable("UserRole");
+                });
+
             modelBuilder.Entity("DA_LTW.Models.Account", b =>
                 {
                     b.HasOne("DA_LTW.Models.Customer", "Customer")
@@ -136,7 +171,7 @@ namespace DA_LTW.Migrations
                     b.Navigation("Customer");
                 });
 
-            modelBuilder.Entity("DA_LTW.Models.History", b =>
+            modelBuilder.Entity("DA_LTW.Models.Order", b =>
                 {
                     b.HasOne("DA_LTW.Models.Tour", "Tour")
                         .WithMany()
@@ -151,6 +186,17 @@ namespace DA_LTW.Migrations
                     b.Navigation("Customer");
 
                     b.Navigation("Tour");
+                });
+
+            modelBuilder.Entity("DA_LTW.Models.UserRole", b =>
+                {
+                    b.HasOne("DA_LTW.Models.Account", "Account")
+                        .WithMany()
+                        .HasForeignKey("IdAccount")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Account");
                 });
 #pragma warning restore 612, 618
         }
