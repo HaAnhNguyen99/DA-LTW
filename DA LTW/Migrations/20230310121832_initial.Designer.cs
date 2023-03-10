@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DA_LTW.Migrations
 {
     [DbContext(typeof(TourDbContext))]
-    [Migration("20230309142728_initial")]
+    [Migration("20230310121832_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -92,7 +92,7 @@ namespace DA_LTW.Migrations
 
                     b.HasIndex("sdt");
 
-                    b.ToTable("Histories");
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("DA_LTW.Models.Roles", b =>
@@ -155,7 +155,12 @@ namespace DA_LTW.Migrations
                     b.Property<int>("IdAccount")
                         .HasColumnType("int");
 
-                    b.HasIndex("IdAccount");
+                    b.Property<int>("IdRoles")
+                        .HasColumnType("int");
+
+                    b.HasKey("IdAccount", "IdRoles");
+
+                    b.HasIndex("IdRoles");
 
                     b.ToTable("UserRole");
                 });
@@ -196,7 +201,15 @@ namespace DA_LTW.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("DA_LTW.Models.Roles", "Roles")
+                        .WithMany()
+                        .HasForeignKey("IdRoles")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Account");
+
+                    b.Navigation("Roles");
                 });
 #pragma warning restore 612, 618
         }

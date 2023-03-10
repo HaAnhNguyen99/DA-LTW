@@ -78,7 +78,7 @@ namespace DA_LTW.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Histories",
+                name: "Orders",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -89,14 +89,14 @@ namespace DA_LTW.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Histories", x => x.Id);
+                    table.PrimaryKey("PK_Orders", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Histories_Customers_sdt",
+                        name: "FK_Orders_Customers_sdt",
                         column: x => x.sdt,
                         principalTable: "Customers",
                         principalColumn: "sdt");
                     table.ForeignKey(
-                        name: "FK_Histories_Tours_IdTour",
+                        name: "FK_Orders_Tours_IdTour",
                         column: x => x.IdTour,
                         principalTable: "Tours",
                         principalColumn: "IdTour",
@@ -107,15 +107,23 @@ namespace DA_LTW.Migrations
                 name: "UserRole",
                 columns: table => new
                 {
-                    IdAccount = table.Column<int>(type: "int", nullable: false)
+                    IdAccount = table.Column<int>(type: "int", nullable: false),
+                    IdRoles = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
+                    table.PrimaryKey("PK_UserRole", x => new { x.IdAccount, x.IdRoles });
                     table.ForeignKey(
                         name: "FK_UserRole_Accounts_IdAccount",
                         column: x => x.IdAccount,
                         principalTable: "Accounts",
                         principalColumn: "IdAccount",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_UserRole_Roles_IdRoles",
+                        column: x => x.IdRoles,
+                        principalTable: "Roles",
+                        principalColumn: "IdRoles",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -125,29 +133,26 @@ namespace DA_LTW.Migrations
                 column: "sdt");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Histories_IdTour",
-                table: "Histories",
+                name: "IX_Orders_IdTour",
+                table: "Orders",
                 column: "IdTour");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Histories_sdt",
-                table: "Histories",
+                name: "IX_Orders_sdt",
+                table: "Orders",
                 column: "sdt");
 
             migrationBuilder.CreateIndex(
-                name: "IX_UserRole_IdAccount",
+                name: "IX_UserRole_IdRoles",
                 table: "UserRole",
-                column: "IdAccount");
+                column: "IdRoles");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Histories");
-
-            migrationBuilder.DropTable(
-                name: "Roles");
+                name: "Orders");
 
             migrationBuilder.DropTable(
                 name: "UserRole");
@@ -157,6 +162,9 @@ namespace DA_LTW.Migrations
 
             migrationBuilder.DropTable(
                 name: "Accounts");
+
+            migrationBuilder.DropTable(
+                name: "Roles");
 
             migrationBuilder.DropTable(
                 name: "Customers");

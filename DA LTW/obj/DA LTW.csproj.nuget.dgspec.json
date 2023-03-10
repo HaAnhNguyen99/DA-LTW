@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Source\\Repos\\DA-LTW\\DA LTW\\DA LTW.csproj": {}
+    "C:\\Users\\hjhj1\\source\\repos\\DA-LTW\\DA LTW\\DA LTW.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Source\\Repos\\DA-LTW\\DA LTW\\DA LTW.csproj": {
+    "C:\\Users\\hjhj1\\source\\repos\\DA-LTW\\DA LTW\\DA LTW.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\DA-LTW\\DA LTW\\DA LTW.csproj",
+        "projectUniqueName": "C:\\Users\\hjhj1\\source\\repos\\DA-LTW\\DA LTW\\DA LTW.csproj",
         "projectName": "DA LTW",
-        "projectPath": "C:\\Users\\Admin\\Source\\Repos\\DA-LTW\\DA LTW\\DA LTW.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Source\\Repos\\DA-LTW\\DA LTW\\obj\\",
+        "projectPath": "C:\\Users\\hjhj1\\source\\repos\\DA-LTW\\DA LTW\\DA LTW.csproj",
+        "packagesPath": "C:\\Users\\hjhj1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hjhj1\\source\\repos\\DA-LTW\\DA LTW\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hjhj1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -75,7 +75,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -87,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.114\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

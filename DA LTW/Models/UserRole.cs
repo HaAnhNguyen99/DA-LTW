@@ -4,16 +4,18 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DA_LTW.Models
 {
-    [Keyless]
+    [PrimaryKey(nameof(IdAccount), nameof(IdRoles))]
     public class UserRole
     {
         // khoa ngoai account
-        [ForeignKey("Account")]
+        [ ForeignKey("Account")]
         public int IdAccount { get; set; }
-        [Required]
-        public virtual Account Account { get; set; }
 
         // khoa ngoai roles
-        public virtual ICollection<Roles> Roles { get; set; }
+        [ ForeignKey("Roles")]
+        public int IdRoles { get; set; }
+
+        public virtual Account Account { get; set; }
+        public virtual Roles Roles { get; set; }
     }
 }
