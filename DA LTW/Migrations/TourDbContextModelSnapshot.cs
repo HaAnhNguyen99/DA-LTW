@@ -34,8 +34,9 @@ namespace DA_LTW.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("sdt")
-                        .HasColumnType("int");
+                    b.Property<string>("sdt")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(10)");
 
                     b.HasKey("IdAccount");
 
@@ -46,11 +47,9 @@ namespace DA_LTW.Migrations
 
             modelBuilder.Entity("DA_LTW.Models.Customer", b =>
                 {
-                    b.Property<int>("sdt")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("sdt"));
+                    b.Property<string>("sdt")
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
 
                     b.Property<string>("Email_Address")
                         .IsRequired()
@@ -80,8 +79,9 @@ namespace DA_LTW.Migrations
                         .IsRequired()
                         .HasColumnType("int");
 
-                    b.Property<int?>("sdt")
-                        .HasColumnType("int");
+                    b.Property<string>("sdt")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(10)");
 
                     b.HasKey("Id");
 
@@ -183,7 +183,9 @@ namespace DA_LTW.Migrations
 
                     b.HasOne("DA_LTW.Models.Customer", "Customer")
                         .WithMany()
-                        .HasForeignKey("sdt");
+                        .HasForeignKey("sdt")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Customer");
 

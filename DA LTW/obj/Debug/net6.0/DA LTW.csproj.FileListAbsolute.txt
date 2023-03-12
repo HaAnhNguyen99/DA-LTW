@@ -587,17 +587,6 @@ C:\Users\Admin\Source\Repos\DA-LTW\DA LTW\obj\Debug\net6.0\scopedcss\bundle\DA L
 C:\Users\Admin\Source\Repos\DA-LTW\DA LTW\obj\Debug\net6.0\scopedcss\projectbundle\DA LTW.bundle.scp.css
 C:\Users\Admin\Source\Repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.csproj.CopyComplete
 C:\Users\Admin\Source\Repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.genruntimeconfig.cache
-C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.csproj.AssemblyReference.cache
-C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.AssemblyInfoInputs.cache
-C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.AssemblyInfo.cs
-C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.csproj.CoreCompileInputs.cache
-C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.RazorAssemblyInfo.cache
-C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.RazorAssemblyInfo.cs
-C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.dll
-C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\refint\DA LTW.dll
-C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.pdb
 C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\bin\Debug\net6.0\appsettings.json
 C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\bin\Debug\net6.0\DA LTW.staticwebassets.runtime.json
@@ -871,6 +860,14 @@ C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\bin\Debug\net6.0\runtimes\win\lib\nets
 C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.csproj.AssemblyReference.cache
+C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.AssemblyInfoInputs.cache
+C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.AssemblyInfo.cs
+C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.csproj.CoreCompileInputs.cache
+C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.RazorAssemblyInfo.cache
+C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.RazorAssemblyInfo.cs
 C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\staticwebassets\msbuild.DA LTW.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\staticwebassets\msbuild.build.DA LTW.props
 C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.DA LTW.props
@@ -882,5 +879,8 @@ C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\scopedcss\Views\Share
 C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\scopedcss\bundle\DA LTW.styles.css
 C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\scopedcss\projectbundle\DA LTW.bundle.scp.css
 C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.csproj.CopyComplete
+C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.dll
+C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\refint\DA LTW.dll
+C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.pdb
 C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\DA LTW.genruntimeconfig.cache
 C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\obj\Debug\net6.0\ref\DA LTW.dll

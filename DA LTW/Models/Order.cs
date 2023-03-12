@@ -12,7 +12,7 @@ namespace DA_LTW.Models
 
         // khoa ngoai 
         [ForeignKey("Customer")]
-        public int? sdt { get; set; }
+        public string sdt { get; set; }
         public virtual Customer Customer { get; set; }
 
         // khoa ngoai tour

@@ -1,4 +1,5 @@
 using DA_LTW.Data;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +13,14 @@ builder.Services.AddDbContext<TourDbContext>(options =>
         builder.Configuration.GetConnectionString("DefaultConnection")
         );
 });
+
+builder.Services.AddAuthentication(
+    CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(option => {
+        option.LoginPath = "/Accounts/Login";
+        option.ExpireTimeSpan = TimeSpan.FromMinutes(5);
+
+    });
 
 var app = builder.Build();
 
@@ -28,10 +37,12 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
+
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Customer}/{action=createForm}/{id?}");
+    pattern: "{controller=Accounts}/{action=Index}/{id?}");
 
 app.Run();

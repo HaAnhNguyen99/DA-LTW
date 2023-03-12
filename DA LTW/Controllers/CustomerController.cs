@@ -1,9 +1,13 @@
 ﻿using DA_LTW.Data;
 using DA_LTW.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DA_LTW.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class CustomerController : Controller
     {
         private readonly TourDbContext _db;
@@ -13,8 +17,13 @@ namespace DA_LTW.Controllers
             _db = db;
         }
 
+        public IActionResult Index()
+        {
+            return View();
+        }
+
         //get
-        public IActionResult createForm()
+        public IActionResult booking()
         {
             return View();
         }
@@ -23,14 +32,9 @@ namespace DA_LTW.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult createForm(Customer obj)
         {
-            if (ModelState.IsValid)
-            {
-                _db.Customers.Add(obj);
-                _db.SaveChanges();
-                TempData["Success"] = "Categories create successfully";
-                return RedirectToAction("Index");
-            }
             return View(obj);
         }
+
+
     }
 }

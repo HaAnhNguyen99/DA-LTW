@@ -17,5 +17,6 @@ namespace DA_LTW.Models
 
         public virtual Account Account { get; set; }
         public virtual Roles Roles { get; set; }
+
     }
 }

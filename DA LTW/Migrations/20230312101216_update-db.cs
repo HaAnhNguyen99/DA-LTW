@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace DA_LTW.Migrations
 {
     /// <inheritdoc />
-    public partial class initial : Migration
+    public partial class updatedb : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -15,8 +15,7 @@ namespace DA_LTW.Migrations
                 name: "Customers",
                 columns: table => new
                 {
-                    sdt = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    sdt = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
                     Fullname = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email_Address = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
@@ -63,7 +62,7 @@ namespace DA_LTW.Migrations
                 {
                     IdAccount = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    sdt = table.Column<int>(type: "int", nullable: false),
+                    sdt = table.Column<string>(type: "nvarchar(10)", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
@@ -84,7 +83,7 @@ namespace DA_LTW.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CreateDateTime = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    sdt = table.Column<int>(type: "int", nullable: true),
+                    sdt = table.Column<string>(type: "nvarchar(10)", nullable: false),
                     IdTour = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -94,7 +93,8 @@ namespace DA_LTW.Migrations
                         name: "FK_Orders_Customers_sdt",
                         column: x => x.sdt,
                         principalTable: "Customers",
-                        principalColumn: "sdt");
+                        principalColumn: "sdt",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Orders_Tours_IdTour",
                         column: x => x.IdTour,

@@ -1,10 +1,12 @@
 ﻿using DA_LTW.Data;
 using DA_LTW.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace DA_LTW.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class HomeController : Controller
     {
         private readonly TourDbContext _db;
@@ -29,6 +31,8 @@ namespace DA_LTW.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]

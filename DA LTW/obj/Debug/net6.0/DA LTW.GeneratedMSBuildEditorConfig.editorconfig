@@ -16,8 +16,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\hjhj1\source\repos\DA-LTW\DA LTW
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Customer/createForm.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcY3JlYXRlRm9ybS5jc2h0bWw=
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Accounts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Accounts/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Accounts/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcU2lnblVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Customer/booking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcYm9va2luZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Customer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Home/Index.cshtml]
