@@ -1,0 +1,84 @@
+﻿@model IEnumerable<DA_LTW.Models.Tour>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name_tour)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.People)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tour_guide)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.stay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Difficult)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreateDateTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Started_date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalDay)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name_tour)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.People)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tour_guide)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.stay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Difficult)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateDateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Started_date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalDay)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdTour">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdTour">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdTour">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

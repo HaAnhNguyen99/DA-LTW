@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DA_LTW.Controllers
 {
-    [Authorize(Roles = "admin")]
+    [Authorize(Roles = "guest")]
     public class CustomerController : Controller
     {
         private readonly TourDbContext _db;
@@ -25,7 +25,8 @@ namespace DA_LTW.Controllers
         //get
         public IActionResult booking()
         {
-            return View();
+            IEnumerable<Tour> objCategoryList = _db.Tours;
+            return View(objCategoryList);
         }
 
         [HttpPost]

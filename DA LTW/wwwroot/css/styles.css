@@ -348,6 +348,7 @@ body {
     -moz-perspective: 150rem;
     position: relative;
     height: 52rem;
+    margin-top: 2rem;
 }
 
 .card__side {
@@ -712,7 +713,7 @@ body {
     }
 
     .row .col-1-of-3 {
-        width: calc((100% - 2 * 6rem) / 3);
+        width: calc((100% - 2 * 9rem) / 3);
     }
 
     .row .col-1-of-4 {

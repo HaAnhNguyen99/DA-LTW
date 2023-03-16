@@ -174,13 +174,13 @@ namespace DA_LTW.Controllers
 
             if (check == null)
             {
-                return NotFound();
+                return View(modelLogin);
             }
             else
             {
                 validate(modelLogin, check);
 
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("booking", "Customer");
             }
 
             ViewData["ValidateMessage"] = "user not found";

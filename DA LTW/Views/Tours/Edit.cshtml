@@ -1,0 +1,72 @@
+﻿@model DA_LTW.Models.Tour
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Tour</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdTour" />
+            <div class="form-group">
+                <label asp-for="Name_tour" class="control-label"></label>
+                <input asp-for="Name_tour" class="form-control" />
+                <span asp-validation-for="Name_tour" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="People" class="control-label"></label>
+                <input asp-for="People" class="form-control" />
+                <span asp-validation-for="People" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tour_guide" class="control-label"></label>
+                <input asp-for="Tour_guide" class="form-control" />
+                <span asp-validation-for="Tour_guide" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="stay" class="control-label"></label>
+                <input asp-for="stay" class="form-control" />
+                <span asp-validation-for="stay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Difficult" class="control-label"></label>
+                <input asp-for="Difficult" class="form-control" />
+                <span asp-validation-for="Difficult" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreateDateTime" class="control-label"></label>
+                <input asp-for="CreateDateTime" class="form-control" />
+                <span asp-validation-for="CreateDateTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Started_date" class="control-label"></label>
+                <input asp-for="Started_date" class="form-control" />
+                <span asp-validation-for="Started_date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalDay" class="control-label"></label>
+                <input asp-for="TotalDay" class="form-control" />
+                <span asp-validation-for="TotalDay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

@@ -27,5 +27,11 @@ namespace DA_LTW.Models
 
         [Required]
         public DateTime Started_date { get; set; }
+
+        [Required]
+        public int Price { get; set; }
+
+        [Required]
+        public int TotalDay { get; set; }
     }
 }
