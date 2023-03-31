@@ -1,8 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\DA LTW"
+    "\\DA LTW",
+    "\\DA LTW\\Areas",
+    "\\DA LTW\\Areas\\Admin",
+    "\\DA LTW\\Areas\\Admin\\Views",
+    "\\DA LTW\\Areas\\Admin\\Views\\Tours",
+    "\\DA LTW\\Controllers"
   ],
-  "SelectedNode": "\\DA LTW.sln",
+  "SelectedNode": "\\DA LTW\\Areas\\Admin\\Views\\Tours\\Edit.cshtml",
   "PreviewInSolutionExplorer": false
 }

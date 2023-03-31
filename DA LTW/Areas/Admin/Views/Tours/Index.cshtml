@@ -1,0 +1,106 @@
+﻿@model IEnumerable<DA_LTW.Models.Tour>
+
+@{
+    int i = 1;
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">
+                STT
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Name_tour)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.People)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Tour_guide)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Detail)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.stay)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Difficult)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.CreateDateTime)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Started_date)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.TotalDay)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.ImgURL)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+            
+            <tr>
+                <td>
+                    @i
+                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name_tour)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.People)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tour_guide)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Detail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.stay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Difficult)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateDateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Started_date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalDay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImgURL)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-controller="Tours" asp-area="Admin" asp-route-id="@item.IdTour"> Edit</a> |
+                <a asp-action="Details" asp-controller="Tours" asp-area="Admin" asp-route-id="@item.IdTour"> Details</a> |
+                <a asp-action="Delete" asp-controller="Tours" asp-area="Admin" asp-route-id="@item.IdTour"> Delete</a>
+            </td>
+        </tr>
+        i++;
+}
+    </tbody>
+</table>

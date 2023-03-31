@@ -15,7 +15,11 @@ namespace DA_LTW.Models
         public int People { get; set; }
 
         [Required]
+        [Display(Name = "Tour guide")]
         public string Tour_guide { get; set; }
+
+        [Required]
+        public string Detail { get; set; }
 
         [Required]
         public string stay { get; set; }
@@ -33,5 +37,7 @@ namespace DA_LTW.Models
 
         [Required]
         public int TotalDay { get; set; }
+
+        public string? ImgURL{ get; set; }
     }
 }

@@ -900,6 +900,9 @@ body {
     background-color: #333;
     padding: 10rem 0;
     font-size: 1.4rem;
+    /*position: relative;*/
+    Width: 100%;
+    bottom: 0;
 }
 
 .footer__logo-box {

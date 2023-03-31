@@ -32,7 +32,7 @@
                                     <li>@i.TotalDay day tours</li>
                                     <li>Up to @i.People People</li>
                                     <li>Tour guide: @i.Tour_guide</li>
-                                    <li>Sleep in cozy @i.stay.ToLower()</li>
+                                    <li>Sleep in cozy @i.stay.ToLower()</li >
                                     <li>Difficulty: @i.Difficult</li>
                                 </ul>
 
@@ -44,7 +44,10 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$@i.Price</p>
                                 </div>
-                                <a href="" class="btn btn--white">Book now!</a>
+
+                                <a asp-controller="Tours" asp-action="Details" asp-route-id="@i.IdTour" class="btn btn--white">
+                                    Book now!
+                                </a>
                             </div>
                         </div>
                     </div>

@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DA_LTW.Controllers
 {
-    [Authorize(Roles = "guest")]
+    [Authorize]
     public class CustomerController : Controller
     {
         private readonly TourDbContext _db;

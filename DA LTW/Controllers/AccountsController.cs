@@ -26,7 +26,7 @@ namespace DA_LTW.Controllers
         }
 
         // GET: Accounts
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
             return View();
         }
@@ -136,11 +136,15 @@ namespace DA_LTW.Controllers
         {
             var checkRole = _db.UserRole.FirstOrDefault(x => x.IdAccount == check.IdAccount);
             var role = _db.Roles.FirstOrDefault(x => x.IdRoles == checkRole.IdRoles);
+            var acc = _db.Accounts.FirstOrDefault(x => x.IdAccount == check.IdAccount);
+            var fullname = _db.Customers.FirstOrDefault(c => c.sdt == acc.sdt).Fullname;
+            var full = fullname;
 
+            //gan claim cho cookie
             List<Claim> claims = new List<Claim>() {
                     new Claim(ClaimTypes.MobilePhone, modelLogin.sdt),
-                    new Claim(ClaimTypes.Role, role.NameRole)
-
+                    new Claim(ClaimTypes.Role, role.NameRole),
+                    new Claim(ClaimTypes.Name, fullname)
                     // Bánh (Tên bánh, Giá trị)
                 };
 

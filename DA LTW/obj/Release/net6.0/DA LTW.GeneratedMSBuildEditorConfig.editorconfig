@@ -5,44 +5,125 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DA_LTW
 build_property.RootNamespace = DA_LTW
-build_property.ProjectDir = C:\Users\Admin\Source\Repos\DA-LTW\DA LTW\
+build_property.ProjectDir = C:\Users\hjhj1\source\repos\DA-LTW\DA LTW\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Admin\Source\Repos\DA-LTW\DA LTW
+build_property.MSBuildProjectDirectory = C:\Users\hjhj1\source\repos\DA-LTW\DA LTW
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Admin/source/repos/DA-LTW/DA LTW/Views/Customer/createForm.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcY3JlYXRlRm9ybS5jc2h0bWw=
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Areas/Admin/Views/Tours/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVG91cnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/DA-LTW/DA LTW/Views/Home/Index.cshtml]
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Areas/Admin/Views/Tours/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVG91cnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Areas/Admin/Views/Tours/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVG91cnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Areas/Admin/Views/Tours/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVG91cnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Areas/Admin/Views/Tours/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVG91cnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Accounts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Accounts/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Accounts/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcU2lnblVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Customer/booking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcYm9va2luZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Customer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/DA-LTW/DA LTW/Views/Home/Privacy.cshtml]
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/DA-LTW/DA LTW/Views/Shared/Error.cshtml]
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Orders/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Orders/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Orders/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Orders/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Orders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/DA-LTW/DA LTW/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/DA-LTW/DA LTW/Views/_ViewImports.cshtml]
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Tours/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Tours/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Tours/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Tours/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Tours/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/DA-LTW/DA LTW/Views/_ViewStart.cshtml]
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/source/repos/DA-LTW/DA LTW/Views/Shared/_Layout.cshtml]
+[C:/Users/hjhj1/source/repos/DA-LTW/DA LTW/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-gf84jw4tze

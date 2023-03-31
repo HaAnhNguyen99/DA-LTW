@@ -15,6 +15,5 @@ namespace DA_LTW.Data
         public DbSet<Account> Accounts { get; set; }
         public DbSet<UserRole> UserRole { get; set; }
         public DbSet<Roles> Roles { get; set; }
-
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hjhj1\\source\\repos\\DA-LTW\\DA LTW\\DA LTW.csproj": {}
+    "C:\\Users\\hjhj1\\Source\\Repos\\DA-LTW\\DA LTW\\DA LTW.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hjhj1\\source\\repos\\DA-LTW\\DA LTW\\DA LTW.csproj": {
+    "C:\\Users\\hjhj1\\Source\\Repos\\DA-LTW\\DA LTW\\DA LTW.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hjhj1\\source\\repos\\DA-LTW\\DA LTW\\DA LTW.csproj",
+        "projectUniqueName": "C:\\Users\\hjhj1\\Source\\Repos\\DA-LTW\\DA LTW\\DA LTW.csproj",
         "projectName": "DA LTW",
-        "projectPath": "C:\\Users\\hjhj1\\source\\repos\\DA-LTW\\DA LTW\\DA LTW.csproj",
+        "projectPath": "C:\\Users\\hjhj1\\Source\\Repos\\DA-LTW\\DA LTW\\DA LTW.csproj",
         "packagesPath": "C:\\Users\\hjhj1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hjhj1\\source\\repos\\DA-LTW\\DA LTW\\obj\\",
+        "outputPath": "C:\\Users\\hjhj1\\Source\\Repos\\DA-LTW\\DA LTW\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hjhj1\\AppData\\Roaming\\NuGet\\NuGet.Config",
